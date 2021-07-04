@@ -17,4 +17,5 @@ func main() {
 
 	fmt.Println("Hello World")
 	fmt.Println("Env value is:", os.Getenv("MY_ENV_VAL"))
+	fmt.Println("Other env value is:", os.Getenv("MY_OTHER_ENV_VAL"))
 }

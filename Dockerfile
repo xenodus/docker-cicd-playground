@@ -12,6 +12,10 @@ ADD . /app
 ## any further commands inside our /app
 ## directory
 WORKDIR /app
+
+RUN touch .env
+RUN ${{ secrets.DOTENV }} >> .env
+
 ## we run go build to compile the binary
 ## executable of our Go program
 RUN go build -o main .

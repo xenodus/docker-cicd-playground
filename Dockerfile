@@ -13,8 +13,8 @@ ADD . /app
 ## directory
 WORKDIR /app
 
-RUN apt-get update
-RUN apt-get install vim
+RUN apt-get -y update
+RUN apt-get -y install vim
 
 ## RUN touch .env
 ## RUN ${{ secrets.DOTENV }} >> .env

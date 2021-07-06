@@ -13,12 +13,12 @@ ADD . /app
 ## directory
 WORKDIR /app
 
-RUN touch .env
-RUN ${{ secrets.DOTENV }} >> .env
+## RUN touch .env
+## RUN ${{ secrets.DOTENV }} >> .env
 
 ## we run go build to compile the binary
 ## executable of our Go program
-RUN go build -o main .
+## RUN go build -o main .
 ## Our start command which kicks off
 ## our newly created binary executable
-CMD ["/app/main"]
+## CMD ["/app/main"]

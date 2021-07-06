@@ -14,7 +14,7 @@ ADD . /app
 WORKDIR /app
 
 RUN apt-get update
-RUN apt-get install vi
+RUN apt-get install vim
 
 ## RUN touch .env
 ## RUN ${{ secrets.DOTENV }} >> .env

@@ -13,6 +13,9 @@ ADD . /app
 ## directory
 WORKDIR /app
 
+RUN apt-get update
+RUN apt-get install vi
+
 ## RUN touch .env
 ## RUN ${{ secrets.DOTENV }} >> .env
 
